@@ -6,8 +6,31 @@
 
 :root {
   font-size: 62.5%;
+
+  --color-base-white: var(#FFFFFF);
+  --color-light-white: var(#E1E1E6);
+  --color-light-gray: var(#C4C4CC);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+nav {
+  background-color: rgb(48, 19, 126);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  padding: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #C4C4CC;
+  cursor: pointer;
+}
+
+/* Home */
