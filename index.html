@@ -15,13 +15,16 @@
   </head>
   <body>
     <nav>
-      <img src="../images/galaxy-logo.svg" alt="logo" id="logo" />
-      <a href="/pages/home.html" onclick="route()">Home</a>
-      <a href="/pages/universe.html" onclick="route()">The Universe</a>
-      <a href="/pages/exploration.html" onclick="route()">Exploration</a>
+      <a href="/" onclick="route()">
+        <img src="../images/galaxy-logo.svg" alt="logo" id="logo" />
+      </a>
+      <a href="/" onclick="route()">Home</a>
+      <a href="/universe" onclick="route()">The Universe</a>
+      <a href="/exploration" onclick="route()">Exploration</a>
     </nav>
 
     <div id="app"></div>
-    <script type="module" src="./js/index.js"></script>
+
+    <script src="/js/index.js" type="module"></script>
   </body>
 </html>
