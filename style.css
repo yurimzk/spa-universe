@@ -6,10 +6,6 @@
 
 :root {
   font-size: 62.5%;
-
-  --color-base-white: var(#FFFFFF);
-  --color-light-white: var(#E1E1E6);
-  --color-light-gray: var(#C4C4CC);
 }
 
 body {
@@ -17,7 +13,6 @@ body {
 }
 
 nav {
-  background-color: rgb(48, 19, 126);
   width: 100%;
   display: flex;
   align-items: center;
@@ -29,8 +24,42 @@ nav {
 a {
   text-decoration: none;
   font-size: 1.6rem;
-  color: #C4C4CC;
+  color: rgb(196, 196, 204);
   cursor: pointer;
 }
 
 /* Home */
+
+#home-page {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-image: url(./images/home.png);
+    background-size: cover;
+    background-color: rgb(1, 12, 16);
+}
+
+#home-page h1 {
+  font-size: 3.2rem;
+  color: rgb(225, 225, 230);
+}
+
+#home-page button {
+  margin-top: 2.4rem;
+  padding: 1.2rem 3.2rem;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: .5rem;
+  background-color: transparent;
+
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+#home-page button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 121, 157);
+}
