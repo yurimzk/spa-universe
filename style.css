@@ -59,6 +59,7 @@ a {
 
 #home-page h1, #universe-page h1, #exploration-page h1 {
   font-size: 3.2rem;
+  font-weight: 700;
   color: rgb(225, 225, 230);
 }
 
@@ -80,4 +81,16 @@ a {
 #home-page button:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(2, 121, 157);
+}
+
+#universe-page, #exploration-page {
+  margin: 0 1.6rem;
+}
+
+#universe-page p, #exploration-page p {
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: rgb(225, 225, 230);
+
+  margin-top: 1.6rem;
 }
