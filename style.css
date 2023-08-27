@@ -94,3 +94,13 @@ a {
 
   margin-top: 1.6rem;
 }
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
