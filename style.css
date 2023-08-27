@@ -29,32 +29,41 @@ a {
   cursor: pointer;
 }
 
-/* Home */
+.bg-home, .bg-universe, .bg-exploration {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
 
 .bg-home {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url(./images/home.png);
-      background-size: cover;
-      z-index: -1;
+  background-image: url(./images/home.png);
 }
 
-#home-page {
-    display: grid;
-    place-content: center;
-    height: 100vh;
+.bg-universe {
+  background-image: url(./images/universe.png);
 }
 
-#home-page h1 {
+.bg-exploration {
+  background-image: url(./images/exploration.png);
+}
+
+#home-page, #universe-page, #exploration-page {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+#home-page h1, #universe-page h1, #exploration-page h1 {
   font-size: 3.2rem;
   color: rgb(225, 225, 230);
 }
 
 #home-page button {
-  margin-top: 2.4rem;
+  margin: 2.4rem auto 0;
   padding: 1.2rem 3.2rem;
   border: 2px solid rgb(255, 255, 255);
   border-radius: .5rem;
