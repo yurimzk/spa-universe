@@ -29,7 +29,9 @@ a {
   cursor: pointer;
 }
 
-.bg-home, .bg-universe, .bg-exploration {
+.bg-home,
+.bg-universe,
+.bg-exploration {
   position: fixed;
   top: 0;
   left: 0;
@@ -51,13 +53,17 @@ a {
   background-image: url(./images/exploration.png);
 }
 
-#home-page, #universe-page, #exploration-page {
+#home-page,
+#universe-page,
+#exploration-page {
   display: grid;
   place-content: center;
   height: 100vh;
 }
 
-#home-page h1, #universe-page h1, #exploration-page h1 {
+#home-page h1,
+#universe-page h1,
+#exploration-page h1 {
   font-size: 3.2rem;
   font-weight: 700;
   color: rgb(225, 225, 230);
@@ -83,11 +89,13 @@ a {
   color: rgb(2, 121, 157);
 }
 
-#universe-page, #exploration-page {
+#universe-page,
+#exploration-page {
   margin: 0 1.6rem;
 }
 
-#universe-page p, #exploration-page p {
+#universe-page p,
+#exploration-page p {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 160%;
@@ -103,15 +111,35 @@ a {
     display: flex;
     justify-content: flex-start;
     gap: 3.2rem;
-    margin-left: 2.4rem;
+    padding: 3.2rem 0 3.2rem 6.4rem;
   }
 
-  #home-page h1, #universe-page h1, #exploration-page h1 {
+  #home-page h1,
+  #universe-page h1,
+  #exploration-page h1 {
     font-size: 4.8rem;
     line-height: 125%;
   }
 
-  #universe-page p, #exploration-page p, #universe-page h1, #exploration-page h1 {
+  #universe-page p,
+  #exploration-page p,
+  #universe-page h1,
+  #exploration-page h1 {
     margin: 1.6rem 4.8rem 0;
   }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 4.0rem 0 4.0rem 7.2rem;
+  }
+
+    #universe-page p,
+    #exploration-page p,
+    #universe-page h1,
+    #exploration-page h1 {
+          margin: 1.6rem 32.0rem 0 10.2rem;
+        }
 }
