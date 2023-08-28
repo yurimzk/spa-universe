@@ -11,30 +11,30 @@ router.handle()
 window.onpopstate = () => router.handle()
 window.route = () => router.route()
 
-// Navbar
+// link active
 
-const btnLearnMore = document.querySelector('#btn-explore')
+const btnLearnMore = document.querySelector('#btn-explore');
 const linkHome = document.querySelector('.nav-home');
 const linkUniverse = document.querySelector('.nav-universe');
 const linkExploration = document.querySelector('.nav-exploration');
 
-linkHome.addEventListener('click', function(){
+if (btnLearnMore) {
+  btnLearnMore.addEventListener('click', function() {
+    navUniverse()
+  })
+}
+
+linkHome.addEventListener('click', function() {
   navHome()
 })
 
-linkUniverse.addEventListener('click', function(){
+linkUniverse.addEventListener('click', function() {
   navUniverse()
 })
 
-linkExploration.addEventListener('click', function(){
+linkExploration.addEventListener('click', function() {
   navExploration()
 })
-
-if (btnLearnMore) {
-  btnLearnMore.addEventListener('click', function() {
-    navExploration()
-  })
-}
 
 function navHome() {
   linkUniverse.classList.remove('active');
