@@ -23,11 +23,22 @@ nav {
   background-color: transparent;
 }
 
-a {
+nav a {
   text-decoration: none;
   font-size: 1.6rem;
   color: rgb(196, 196, 204);
+
   cursor: pointer;
+  transition: all .5s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+
+nav a.active {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
 }
 
 .bg-home,
