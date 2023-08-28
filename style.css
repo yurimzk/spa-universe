@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  transition: background-image .5s ease;
 }
 
 nav {
@@ -105,7 +106,7 @@ a {
   margin-top: 1.6rem;
 }
 
-/* Responsiveness */
+/* Responsive Design */
 
 @media (min-width: 768px) {
   nav {
