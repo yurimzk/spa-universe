@@ -81,23 +81,23 @@ nav a.active {
   color: rgb(225, 225, 230);
 }
 
-#home-page button {
+#home-page .btn-explore {
   margin: 2.4rem auto 0;
   padding: 1.2rem 3.2rem;
   border: 2px solid rgb(255, 255, 255);
   border-radius: .5rem;
   background-color: transparent;
 
+  cursor: pointer;
+  transition: background-color 0.5s ease;
   color: rgb(255, 255, 255);
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-weight: 700;
-
-  cursor: pointer;
-  transition: background-color 0.5s ease;
+  text-decoration: none;
 }
 
-#home-page button:hover {
+#home-page .btn-explore:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(2, 121, 157);
 }
